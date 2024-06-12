@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA 5 Fan Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">GTA 5 Fan Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="gta-header">
+        <h1>Welcome to GTA 5</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div id="features" class="my-5">
+            <h2>Features</h2>
+            <p>GTA 5 offers an expansive, detailed world with a variety of activities and an engaging storyline.</p>
+            <button class="btn btn-primary" id="toggle-feature">Toggle More Info</button>
+            <div id="more-info" style="display: none;">
+                <ul>
+                    <li>Open World</li>
+                    <li>Multiple Protagonists</li>
+                    <li>Extensive Customization</li>
+                    <li>Online Multiplayer</li>
+                </ul>
+            </div>
+        </div>
+        <div id="reviews" class="my-5">
+            <h2>Submit Your Review</h2>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <input type="number" class="form-control" id="rating" placeholder="Rate out of 10">
+                </div>
+                <div class="form-group">
+                    <label for="review">Review</label>
+                    <textarea class="form-control" id="review" rows="3" placeholder="Write your review"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="submitReview()">Submit</button>
+            </form>
+            <div class="mt-5">
+                <h3>Recent Reviews</h3>
+                <ul id="reviews-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-custom text-center py-3">
+        <p>&copy; 2024 GTA 5 Fan Page</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

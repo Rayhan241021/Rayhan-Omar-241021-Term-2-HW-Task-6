@@ -1,0 +1,19 @@
+body {
+    padding-top: 56px;
+}
+.bg-custom {
+    background-color: #f8f9fa;
+}
+.gta-header {
+    background: url('https://www.rockstargames.com/gta-v/_next/static/images/share.png') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gta-header h1 {
+    font-size: 3rem;
+}
